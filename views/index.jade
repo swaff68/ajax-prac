@@ -2,6 +2,11 @@ extends layout
 
 block content
 	a#random(href='#') Get Random Numbers
+
+	form#numForm(method="post", action="/formsubmit")
+		input(name="submittedNumber", type="Number",placeholder="#")
+		input(name="submit", type="submit")
+	h3#totalCount
 	ul#numbers
 
 block scripts
